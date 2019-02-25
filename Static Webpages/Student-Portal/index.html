@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="stylesheet" href="static/style.css" type="text/css" /><style type="text/css">        body {
+          margin: 0;
+          font-family: Arial;
+        }
+        .top{
+                height: 130px;
+        }
+        .top-container {
+          background-color: black;
+          color: white;
+          font-size: 50px;
+          height: 80px;
+          line-height: 80px;
+          text-align: center;
+        }
+
+        .header {
+          width: 100%;
+          float: left;
+          background-color: white;
+          color: #3498DB; 
+        }
+
+        .current{
+                text-align: center;
+                float: left;
+                width: 30%;
+                height: 50px;
+                font-size: 30px;
+                line-height: 50px;
+        }
+
+        .nav{
+                float: left;
+                width: 70%;
+                height: 50px;
+                font-size: 15px;
+                line-height: 50px;
+                text-align: right;
+        }
+
+        .nav&gt;a{
+                padding-right: 20px;
+        }
+
+        .main{
+                background-color: #3498DB;
+        }
+        .content {
+          margin: 20px;
+          background-color: white;
+          border-left: 2px solid black;
+          border-right: 2px solid black;
+          text-align: center;
+          font-size: 20px;
+          padding: 30px;
+        }
+
+        .sticky {
+          position: fixed;
+          top: 0;
+          width: 100%;
+        }
+
+        .sticky + .content {
+          padding-top: 102px;
+        }
+        </style><title></title></head><body><div class="top"><div class="top-container">Student Portal
+</div><div class="header" id="myHeader"><div class="current">Home
+</div><div class="nav"><a href="/calender">Calender</a> <a href="/timetable">Time Table</a> <a href="/home">Home</a> <a href="/register">Register</a> <a href="/logout">Logout</a> <a href="/message">Message</a>
+</div></div></div><div class="main"><div class="content"><h1>Administrator
+</h1><p>Usertype: A
+</p><p>Username: admin
+</p><h4>Registered users:
+</h4><p>moosa <a href="/delete/moosa">delete</a> <a href="/edit2/moosa">Attendance</a>
+</p><p>hani <a href="/delete/hani">delete</a> <a href="/edit2/hani">Attendance</a>
+</p><p>kevin <a href="/delete/kevin">delete</a> <a href="/edit2/kevin">Attendance</a>
+</p><p>nischal <a href="/delete/nischal">delete</a> <a href="/edit2/nischal">Attendance</a>
+</p><p>ayush <a href="/delete/ayush">delete</a> <a href="/edit2/ayush">Attendance</a>
+</p></div></div><div class="footer"></div><script type="text/javascript">        window.onscroll = function() {myFunction()};
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+          if (window.pageYOffset &gt;= sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+        </script></body></html>
